@@ -4,3 +4,10 @@ npm i -g @angular/cli
 
 Crea il progetto 
 ng new 
+
+directory del progetto 
+Cd riva
+
+Crea un componente
+
+ng generate component 
