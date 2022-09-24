@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pasta.component.css']
 })
 export class PastaComponent implements OnInit {
-
-  constructor() { }
+  name: string;
+  constructor() { 
+    this.name='terzo'
+  }
 
   ngOnInit(): void {
   }

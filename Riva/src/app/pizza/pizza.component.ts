@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
-
-  constructor() { }
+  name: string;
+  constructor() {
+    this.name='secondo'
+   }
 
   ngOnInit(): void {
   }

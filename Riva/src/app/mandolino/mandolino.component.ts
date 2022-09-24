@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mandolino.component.css']
 })
 export class MandolinoComponent implements OnInit {
-
-  constructor() { }
+  name: string;
+  constructor() {
+    this.name='quarto'
+   }
 
   ngOnInit(): void {
   }
