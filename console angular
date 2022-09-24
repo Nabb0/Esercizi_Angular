@@ -1,0 +1,6 @@
+Come creare un progetto in gitpod
+
+npm i -g @angular/cli
+
+Crea il progetto 
+ng new 
