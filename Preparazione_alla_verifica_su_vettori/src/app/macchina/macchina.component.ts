@@ -7,7 +7,10 @@ import { Component, OnInit ,Input} from '@angular/core';
 })
 export class MacchinaComponent implements OnInit {
   @Input() pluto: string='';
-  constructor() { }
+  pezzi: string[]; //Creiamo il nostro vettore di stringhe
+  constructor() {
+    this.pezzi = ['bulloni','viti','ferro']; //Riempiamo il vettore
+   }
 
   ngOnInit(): void {
   }
