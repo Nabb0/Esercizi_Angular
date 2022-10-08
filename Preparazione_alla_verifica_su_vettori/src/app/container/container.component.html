@@ -1,6 +1,6 @@
-<ul>
-    <li *ngFor="let pippo of mdc">
-      <app-macchina [pluto]="pippo">
-      </app-macchina>
-    </li>
-  </ul>
+<div class="card-deck">
+    <div class="card" *ngFor="let pippo of mdc">
+        <app-macchina [pluto]="pippo">
+        </app-macchina>
+    </div>
+</div>
