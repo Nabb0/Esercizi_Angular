@@ -33,7 +33,7 @@ export class FooComponent {
           userId: 1
         })
       )
-      .subscribe(data => {
+      .subscribe(data => { console.log('dovrebbe entrare qui ')
         this.data = data;
         this.loading = false;
       });
