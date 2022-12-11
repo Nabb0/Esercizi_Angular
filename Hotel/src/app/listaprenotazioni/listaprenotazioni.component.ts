@@ -11,12 +11,15 @@ export class ListaprenotazioniComponent {
 
   constructor() {}
   @Input() listaPreno : Booking[]= undefined!;
-  room : Room = undefined!;
+  @Input() room : Room = undefined!;
   ngOnInit():void {
   
   }
   mostarDett(room: Room)
   {
-    this.room=room;
+    this.room.id =room.id;
+    this.room.name =room.name;
+    this.room.num_D_bed =room.num_D_bed;
+    this.room.num_S_bed =room.num_S_bed;
   }
 }
