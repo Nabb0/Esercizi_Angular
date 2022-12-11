@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Booking } from './models/booking.model';
+
 
 @Component({
   selector: 'app-root',
@@ -9,18 +11,18 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   title = 'Hotel';
-  obsRooms! : Observable<object>
-  data! : object;
+  obsRooms! : Observable<Booking[]>
+  data! :Booking[];
   constructor(private http :HttpClient)
   {
 
   }
   ngOnInit(): void {
-    this.obsRooms =this.http.get('https://my-json-server.typicode.com/malizia-g/hotel/booking');
+    this.obsRooms =this.http.get<Booking[]>('https://my-json-server.typicode.com/malizia-g/hotel/booking');
     this.obsRooms.subscribe(this.fatiqualcosa)
   }
 
-  fatiqualcosa=(data: object)=> {
+  fatiqualcosa=(data:Booking[] )=> {
     this.data=data
   }
 }
